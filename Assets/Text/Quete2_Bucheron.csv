@@ -1,0 +1,14 @@
+﻿BoisNeed;20;PierreNeed;0;;;;;;;;
+Nom;Dialogue;Nombre de personnes;Personne 1;Etat Personne 1;Personne 2;Etat Personne 2;Personne 3;Etat Personne 3;Personne 4;Etat Personne 4;A garder vide
+G;On en finira jamais, ça prend des plombes !;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;Courage, c’est une épreuve d’endurance.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R;En même temps je le regarde depuis tout à l’heure il fait n’importe quoi.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+G;Qu’est-ce tu dis toi ? Si tu veux pas te bouffer un revers dans la tronche tu…;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;Stop ! R Qu’est-ce tu veux dire ?;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R;Eh bien, il suffit d’être méthodique et avoir un minimum d’intelligence pour que ça aille vite.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+G;Mais c’est qu’il se fout de notre gueule là. Il ferait mieux de continuer à déblayer sa partie !;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R;J’ai déjà fini.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;Très bien, G tu te la fermes, et R tu es gentil avec G et tu lui apprends ta méthode.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R et G;Mais !;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;**Regard menaçant**;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R et G;Bien chef.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x

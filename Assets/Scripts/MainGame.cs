@@ -27,6 +27,9 @@ public class MainGame : MonoBehaviour
             //Log.text = ButtonsManager.LogKeeper.ToString();
 
         }*/
+
+        Sauvegarde_Reader.instance.LoadFromSauvegarde();
+
         TextUpdate();
     }
 

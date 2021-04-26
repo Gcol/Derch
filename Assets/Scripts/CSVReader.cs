@@ -170,7 +170,7 @@ public class CSVReader : MonoBehaviour
                 temp.transform.position = new Vector3(0.8f, 0, 0);
                 temp.SetActive(true);
             }
-            print("J'ai 1 personnage");
+            //print("J'ai 1 personnage");
         }
         else if (NbCharacter == 2)
         {
@@ -187,7 +187,7 @@ public class CSVReader : MonoBehaviour
                 temp.transform.position = new Vector3(1.65f, 0, 0);
                 temp.SetActive(true);
             }
-            print("J'ai 2 personnage");
+            //print("J'ai 2 personnage");
         }
         else if (NbCharacter == 3)
         {
@@ -212,7 +212,7 @@ public class CSVReader : MonoBehaviour
                 temp.SetActive(true);
             }
 
-            print("J'ai 3 personnage");
+            //print("J'ai 3 personnage");
         }
         else if (NbCharacter == 4)
         {
@@ -245,7 +245,7 @@ public class CSVReader : MonoBehaviour
                 temp.transform.position = new Vector3(2.5f, 0, 0); //3f
             }
 
-            print("J'ai 4 personnage");
+            //print("J'ai 4 personnage");
         }
         else
         {
@@ -286,6 +286,7 @@ public class CSVReader : MonoBehaviour
 
             QuetesManager.instance.UpdateStatutQuete(bindata.name);
             SceneManager.LoadScene("Map");
+            //SceneManager.LoadScene("End");
             bindata = null;
         }
 

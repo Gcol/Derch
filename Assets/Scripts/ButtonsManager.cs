@@ -64,7 +64,8 @@ public class ButtonsManager : MonoBehaviour
         }
     }
     public void Map_ButtonClick()
-    {   
+    {
+        Sauvegarde_Reader.instance.LoadToSauvegarde();
         SceneManager.LoadScene("Map");
     }
 }

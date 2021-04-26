@@ -860,7 +860,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4967950c6915145c2b60c90ef2a67bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Quete1_Bucheron: {fileID: 4900000, guid: cf38bfd88f3334a319b8281219caf921, type: 3}
+  Quete1_Bucheron: {fileID: 4900000, guid: ba9d57d3141ca4b43a6a8207780511ff, type: 3}
+  Quete2_Bucheron: {fileID: 4900000, guid: 7cb07288435ffe24f803aa2e9e07ae4f, type: 3}
 --- !u!1 &735437459
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,6 +54,13 @@ public class Sauvegarde_Reader : MonoBehaviour
         int Quete1_Bucheron = QuetesManager.Quete1_Bucheron;
         int Quete2_Bucheron = QuetesManager.Quete2_Bucheron;
 
+        //Print car je veux voir ce qu'il se passe
+        print("Je sauvegarde la progression et nous avons");
+        print("LogRessources = " + LogRessources.ToString());
+        print("Nombre_Vie = " + LifeScore.ToString());
+        print("Quete1_Bucheron = " + Quete1_Bucheron.ToString());
+        print("Quete2_Bucheron = " + Quete2_Bucheron.ToString());
+
         StreamWriter writer = new StreamWriter(path);
         //writer.WriteLine("Test");
         //writer.WriteLine("Ligne2");

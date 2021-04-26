@@ -15,6 +15,7 @@ public class QuetesManager : MonoBehaviour
 
     /*Quetes existantes :
      *Quete1_Bucheron
+     *Quete2_Bucheron
      */
 
     void Start()
@@ -26,6 +27,7 @@ public class QuetesManager : MonoBehaviour
     {
         print("Augmentation statut quête : " + NomQuete);
         if (NomQuete == "Quete1_Bucheron") { Quete1_Bucheron++; }
+        if (NomQuete == "Quete2_Bucheron") { Quete2_Bucheron++; }
         print(NomQuete + "= " + Quete1_Bucheron);
     }
 
@@ -33,6 +35,7 @@ public class QuetesManager : MonoBehaviour
     {
         print("Réduction statut quête : " + NomQuete);
         if (NomQuete == "Quete1_Bucheron") { Quete1_Bucheron--; }
+        if (NomQuete == "Quete2_Bucheron") { Quete2_Bucheron--; }
         print(NomQuete + "= " + Quete1_Bucheron);
     }
 

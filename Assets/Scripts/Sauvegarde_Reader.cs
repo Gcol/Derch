@@ -11,6 +11,7 @@ public class Sauvegarde_Reader : MonoBehaviour
 {
 
     public TextAsset Sauvegarde;
+    string path = "Assets/Text/Sauvegarde.csv";
 
     public static Sauvegarde_Reader instance;
 
@@ -18,16 +19,23 @@ public class Sauvegarde_Reader : MonoBehaviour
     void Awake()
     {
         instance = GetComponent<Sauvegarde_Reader>();
+        AssetDatabase.Refresh();
     }
 
     public void LoadFromSauvegarde()
     {
+
+        //string[] data = Sauvegarde.text.Split(new char[] { '\n' });
         string[] data = Sauvegarde.text.Split(new char[] { '\n' });
+
+        print("Je récupère les infos de la sauvegarde");
 
         //Récupération infos ressources nécessaires
         string[] RessourcesBois = data[1].Split(new char[] { ';' });
         string Ressource_Bois = RessourcesBois[1];
+        print("Ressource_Bois a sauvegarder : " + Ressource_Bois);
         MainGame.LogRessources = int.Parse(Ressource_Bois);
+        print("LogRessources = " + MainGame.LogRessources.ToString());
 
         string[] RessourcesPierre = data[2].Split(new char[] { ';' });
         string Ressource_Pierre = RessourcesPierre[1];
@@ -44,11 +52,12 @@ public class Sauvegarde_Reader : MonoBehaviour
         string[] Quete2 = data[5].Split(new char[] { ';' });
         string Quete2_Bucheron = Quete2[1];
         QuetesManager.Quete2_Bucheron = int.Parse(Quete2_Bucheron);
+
     }
 
     public void LoadToSauvegarde()
     {
-        string path = "Assets/Text/Sauvegarde.csv";
+        //string path = "Assets/Text/Sauvegarde.csv"; C'est déclaré dans le général
         int LogRessources = MainGame.LogRessources;
         int LifeScore = MainGame.LifeScore;
         int Quete1_Bucheron = QuetesManager.Quete1_Bucheron;

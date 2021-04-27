@@ -37,6 +37,9 @@ public class MainGame : MonoBehaviour
     {
         Life.text = LifeScore.ToString();
         Log.text = LogRessources.ToString();
+        print("Je viens de mettre à jour les infos HUD de MainGame");
+        print("LifeScore = " + LifeScore.ToString());
+        print("LogRessources = " + LogRessources.ToString());
     }
 
     public void LifeReduction()

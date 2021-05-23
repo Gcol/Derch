@@ -45,6 +45,8 @@ public class CSVReader : MonoBehaviour
 
     public static CSVReader instance;
 
+    private bool RessourcesForEndofDialogue = true;
+
     void Start()
     {
         instance = GetComponent<CSVReader>();
@@ -98,6 +100,8 @@ public class CSVReader : MonoBehaviour
         PierreNeed.text = Ressources[3];
         StaticBoisNeed = BoisNeed.text;
         StaticPierreNeed = PierreNeed.text;
+
+        if (Ressources[1] == "No ressources") { RessourcesForEndofDialogue = false; }
 
         //Récupération infos dialogue
         for (int i = 2; i < data.Length - 1; i++)
@@ -262,8 +266,16 @@ public class CSVReader : MonoBehaviour
     void EndDialogue()
     {
         print("Dialogue ended");
-        ShowRessources();
-        QuetesManager.instance.UpdateStatutQuete(bindata.name);
+        if (RessourcesForEndofDialogue == true) 
+        {
+            ShowRessources();
+            QuetesManager.instance.UpdateStatutQuete(bindata.name);
+        } else
+        {
+            QuetesManager.instance.UpdateStatutQuete(bindata.name);
+            Sauvegarde_Reader.instance.LoadToSauvegarde();
+            SceneManager.LoadScene("Map");
+        }
     }
 
     public void ShowRessources()
@@ -291,6 +303,7 @@ public class CSVReader : MonoBehaviour
             print("Je viens de retirer le bois nécessaire");
 
             QuetesManager.instance.UpdateStatutQuete(bindata.name);
+            Sauvegarde_Reader.instance.LoadToSauvegarde();
             SceneManager.LoadScene("Map");
             //SceneManager.LoadScene("End");
             bindata = null;

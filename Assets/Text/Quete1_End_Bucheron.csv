@@ -1,0 +1,8 @@
+﻿BoisNeed;No ressources;PierreNeed;0;;;;;;;;
+Nom;Dialogue;Nombre de personnes;Personne 1;Etat Personne 1;Personne 2;Etat Personne 2;Personne 3;Etat Personne 3;Personne 4;Etat Personne 4;A garder vide
+HdL;Et voilà, bon travail les gars ! Il n’y a pas eu de problèmes particuliers ?;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+G;Si, je me suis fait mordre !;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;Mordre ? Un monstre aurait-il élu domicile à proximité ?;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+G;Non, le bois m’a mordu ! En même temps, quelle idée pourrie de s’installer dans le cœur de la corruption de ce pays… Et elle est où S ?! Ca a pris une plombe à faire ça à trois !;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+R;C’est pas si désagréable ! Mais c’est vrai que c’était le moment ou jamais de démontrer l’utilité de sa magie.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x
+HdL;Attention elle pourrait vous entendre. Elle m’a dit avoir un projet à mener, donc pour l’instant c’est que nous trois. Courage, on a encore du travail.;4;HdL;Normal;G;Normal;S;Normal;R;Normal;x

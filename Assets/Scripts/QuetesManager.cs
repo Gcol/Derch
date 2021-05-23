@@ -11,6 +11,7 @@ public class QuetesManager : MonoBehaviour
 
     //Création de tous les statut de quêtes (pour info : 0 = Jamais lancé ; 1 = En cours ; 2 = Objectif atteint
     public static int Quete1_Bucheron = 0;
+    public static int Quete1_End_Bucheron = 0;
     public static int Quete2_Bucheron = 0;
 
     /*Quetes existantes :
@@ -27,6 +28,7 @@ public class QuetesManager : MonoBehaviour
     {
         print("Augmentation statut quête : " + NomQuete);
         if (NomQuete == "Quete1_Bucheron") { Quete1_Bucheron++; }
+        if (NomQuete == "Quete1_End_Bucheron") { Quete1_End_Bucheron++; }
         if (NomQuete == "Quete2_Bucheron") { Quete2_Bucheron++; }
         print(NomQuete + "= " + Quete1_Bucheron);
     }
@@ -35,6 +37,7 @@ public class QuetesManager : MonoBehaviour
     {
         print("Réduction statut quête : " + NomQuete);
         if (NomQuete == "Quete1_Bucheron") { Quete1_Bucheron--; }
+        if (NomQuete == "Quete1_End_Bucheron") { Quete1_End_Bucheron--; }
         if (NomQuete == "Quete2_Bucheron") { Quete2_Bucheron--; }
         print(NomQuete + "= " + Quete1_Bucheron);
     }

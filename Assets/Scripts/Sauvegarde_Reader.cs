@@ -49,6 +49,10 @@ public class Sauvegarde_Reader : MonoBehaviour
         string Quete1_Bucheron = Quete1[1];
         QuetesManager.Quete1_Bucheron = int.Parse(Quete1_Bucheron);
 
+        string[] Quete1_End = data[5].Split(new char[] { ';' });
+        string Quete1_End_Bucheron = Quete1_End[1];
+        QuetesManager.Quete1_End_Bucheron = int.Parse(Quete1_End_Bucheron);
+
         string[] Quete2 = data[5].Split(new char[] { ';' });
         string Quete2_Bucheron = Quete2[1];
         QuetesManager.Quete2_Bucheron = int.Parse(Quete2_Bucheron);
@@ -61,6 +65,7 @@ public class Sauvegarde_Reader : MonoBehaviour
         int LogRessources = MainGame.LogRessources;
         int LifeScore = MainGame.LifeScore;
         int Quete1_Bucheron = QuetesManager.Quete1_Bucheron;
+        int Quete1_End_Bucheron = QuetesManager.Quete1_End_Bucheron;
         int Quete2_Bucheron = QuetesManager.Quete2_Bucheron;
 
         //Print car je veux voir ce qu'il se passe
@@ -68,6 +73,7 @@ public class Sauvegarde_Reader : MonoBehaviour
         print("LogRessources = " + LogRessources.ToString());
         print("Nombre_Vie = " + LifeScore.ToString());
         print("Quete1_Bucheron = " + Quete1_Bucheron.ToString());
+        print("Quete1_End_Bucheron = " + Quete1_End_Bucheron.ToString());
         print("Quete2_Bucheron = " + Quete2_Bucheron.ToString());
 
         StreamWriter writer = new StreamWriter(path);
@@ -79,6 +85,7 @@ public class Sauvegarde_Reader : MonoBehaviour
         writer.WriteLine("Ressource_Pierre;" + "0");
         writer.WriteLine("Nombre_Vie;" + LifeScore.ToString());
         writer.WriteLine("Quete1_Bucheron;" + Quete1_Bucheron.ToString());
+        writer.WriteLine("Quete1_End_Bucheron;" + Quete1_End_Bucheron.ToString());
         writer.WriteLine("Quete2_Bucheron;" + Quete2_Bucheron.ToString());
         writer.Close();
 

@@ -1,6 +1,7 @@
 Variable;Valeur
-Ressource_Buche;0
+Ressource_Buche;5
 Ressource_Pierre;0
-Nombre_Vie;999992
-Quete1_Bucheron;1
-Quete2_Bucheron;0
+Nombre_Vie;999989
+Quete1_Bucheron;2
+Quete1_End_Bucheron;1
+Quete2_Bucheron;2

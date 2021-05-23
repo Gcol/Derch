@@ -117,7 +117,13 @@ public class CSVReader : MonoBehaviour
             State4.Enqueue(row[10]);
         }
 
-        DisplayNextSentence();
+        if (QuetesManager.Quete1_Bucheron == 1)
+        {
+            ShowRessources();
+        } else
+        {
+            DisplayNextSentence();
+        }
     }
 
     public void DisplayNextSentence()

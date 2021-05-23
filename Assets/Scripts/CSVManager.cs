@@ -24,7 +24,8 @@ public class CSVManager : MonoBehaviour
             {
                 CSVReader.bindata = Quete1_Bucheron;
                 print("je viens de charger le CSV reader");
-                if (QuetesManager.Quete1_Bucheron == 0)
+                CSVReader.instance.LoadCSV();
+                /*if (QuetesManager.Quete1_Bucheron == 0)
                 {
                     print("Quete1_Bucheron == 0");
                     CSVReader.instance.LoadCSV();
@@ -33,7 +34,7 @@ public class CSVManager : MonoBehaviour
                 {
                     print("Quete1_Bucheron == 1");
                     CSVReader.instance.ShowRessources();
-                }
+                }*/
             }
 
             if (QuetesManager.Quete1_Bucheron == 2)
